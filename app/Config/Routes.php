@@ -36,9 +36,12 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index', ['filter' => 'auth']);
-$routes->post('register', 'Register::index');
-$routes->post('login', 'Login::index');
-
+$routes->match(['get', 'post'], 'audio/(:num)/(:alphanum)/(:alphanum)', 'Audio::play/$1/$2/$3');
+$routes->get('qari', 'Qari::index');
+$routes->group("api", function ($routes) {
+    $routes->post("register", "Register::index");
+    $routes->post("login", "Login::index");
+});
 /*
  * --------------------------------------------------------------------
  * Additional Routing
