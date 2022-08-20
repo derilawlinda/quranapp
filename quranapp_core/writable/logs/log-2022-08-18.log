@@ -1,0 +1,216 @@
+CRITICAL - 2022-08-18 00:11:01 --> file_get_contents(/Users/QPI-LP066/Documents/repos/quranapp/writable/audio/play): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Audio.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(/Users/QPI-LP066/Documents/repos/quranapp/writable/audio/play): Failed to open stream: No such file or directory', 'APPPATH/Controllers/Audio.php', 11)
+ 2 APPPATH/Controllers/Audio.php(11): file_get_contents('ROOTPATH/writable/audio/play')
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Audio->play('play')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audio))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-18 09:13:27 --> file_get_contents(/Users/QPI-LP066/Documents/repos/quranapp/writable/uploads/play): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Audio.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(/Users/QPI-LP066/Documents/repos/quranapp/writable/uploads/play): Failed to open stream: No such file or directory', 'APPPATH/Controllers/Audio.php', 11)
+ 2 APPPATH/Controllers/Audio.php(11): file_get_contents('ROOTPATH/writable/uploads/play')
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Audio->play('play')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audio))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-18 09:24:13 --> file_get_contents(/Users/QPI-LP066/Documents/repos/quranapp/writable/uploads/index): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Audio.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(/Users/QPI-LP066/Documents/repos/quranapp/writable/uploads/index): Failed to open stream: No such file or directory', 'APPPATH/Controllers/Audio.php', 16)
+ 2 APPPATH/Controllers/Audio.php(16): file_get_contents('ROOTPATH/writable/uploads/index')
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Audio->play('index')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Audio))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-18 09:45:48 --> mysqli_sql_exception: Table 'users' already exists in /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('CREATE TABLE `u...', 0)
+#1 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 /Users/QPI-LP066/Documents/repos/quranapp/app/Database/Migrations/2022-08-17-144025_Qari.php(23): CodeIgniter\Database\Forge->createTable('users')
+#5 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(868): App\Database\Migrations\Qari->up()
+#6 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /Users/QPI-LP066/Documents/repos/quranapp/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2022-08-18 10:50:13 --> mysqli_sql_exception: Table 'quranapp.qaris' doesn't exist in /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/QPI-LP066/Documents/repos/quranapp/app/Controllers/Qari.php(15): CodeIgniter\BaseModel->findAll()
+#7 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Qari->index()
+#8 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qari))
+#9 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/QPI-LP066/Documents/repos/quranapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/QPI-LP06...')
+#12 {main}
+CRITICAL - 2022-08-18 10:50:13 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 223.
+ 1 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH/Controllers/Qari.php(15): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Qari->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qari))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-18 10:57:52 --> mysqli_sql_exception: Table 'quranapp.qaris' doesn't exist in /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/QPI-LP066/Documents/repos/quranapp/app/Controllers/Qari.php(17): CodeIgniter\BaseModel->findAll()
+#7 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Qari->index()
+#8 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qari))
+#9 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/QPI-LP066/Documents/repos/quranapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/QPI-LP06...')
+#12 {main}
+CRITICAL - 2022-08-18 10:57:52 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 223.
+ 1 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH/Controllers/Qari.php(17): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Qari->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qari))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-18 10:58:31 --> mysqli_sql_exception: Table 'quranapp.qaris' doesn't exist in /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/QPI-LP066/Documents/repos/quranapp/app/Controllers/Qari.php(17): CodeIgniter\BaseModel->findAll()
+#7 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Qari->index()
+#8 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qari))
+#9 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/QPI-LP066/Documents/repos/quranapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/QPI-LP066/Documents/repos/quranapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/QPI-LP06...')
+#12 {main}
+CRITICAL - 2022-08-18 10:58:31 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 223.
+ 1 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH/Controllers/Qari.php(17): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Qari->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qari))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-18 12:18:01 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1380): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1411): CodeIgniter\Database\BaseConnection->listTables()
+#5 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run()
+#10 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index()
+#11 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#13 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#14 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /home/ssifooda/public_html/quran.ssifoodandspirits.com/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1380): CodeIgniter\Database\BaseConnection->query()
+#3 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1411): CodeIgniter\Database\BaseConnection->listTables()
+#4 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists()
+#5 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#7 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run()
+#8 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run()
+#9 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index()
+#10 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap()
+#11 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#12 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 /home/ssifooda/public_html/quran.ssifoodandspirits.com/spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2022-08-18 12:20:07 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'ssifooda_deril'@'localhost' to database 'ssifooda_quranapp' in /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1380): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1411): CodeIgniter\Database\BaseConnection->listTables()
+#5 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run()
+#10 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index()
+#11 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#13 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#14 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /home/ssifooda/public_html/quran.ssifoodandspirits.com/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' to database 'ssifooda_quranapp' in /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1380): CodeIgniter\Database\BaseConnection->query()
+#3 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1411): CodeIgniter\Database\BaseConnection->listTables()
+#4 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists()
+#5 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#7 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run()
+#8 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run()
+#9 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index()
+#10 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap()
+#11 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#12 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/ssifooda/public_html/quran.ssifoodandspirits.com/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 /home/ssifooda/public_html/quran.ssifoodandspirits.com/spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2022-08-18 12:34:19 --> mysqli_sql_exception: Table 'ssifooda_quranapp.qaris' doesn't exist in /home/ssifooda/public_html/quran.ssifoodandspirits.com/quranapp_core/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/ssifooda/public_html/quran.ssifoodandspirits.com/quranapp_core/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/ssifooda/public_html/quran.ssifoodandspirits.com/quranapp_core/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ssifooda/public_html/quran.ssifoodandspirits.com/quranapp_core/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ssifooda/public_html/quran.ssifoodandspirits.com/quranapp_core/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ssifooda/public_html/quran.ssifoodandspirits.com/quranapp_core/vendor/codeigniter4/framework/system/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/ssifooda/public_html/quran.ssifoodandspirits.com/quranapp_core/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 /home/ssifooda/public_html/quran.ssifoodandspirits.com/quranapp_core/app/Controllers/Qari.php(17): CodeIgniter\BaseModel->findAll()
+#7 /home/ssifooda/public_html/quran.ssifoodandspirits.com/quranapp_core/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Qari->index()
+#8 /home/ssifooda/public_html/quran.ssifoodandspirits.com/quranapp_core/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/ssifooda/public_html/quran.ssifoodandspirits.com/quranapp_core/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/ssifooda/public_html/quran.ssifoodandspirits.com/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-08-18 12:34:19 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 223.
+ 1 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Controllers/Qari.php(17): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Qari->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

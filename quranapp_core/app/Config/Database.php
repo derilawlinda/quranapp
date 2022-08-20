@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'root',
-        'password' => '',
-        'database' => 'quranapp',
+        'username' => 'ssifooda_deril',
+        'password' => 'Q4VzSLMJK4bq',
+        'database' => 'ssifooda_quranapp',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
