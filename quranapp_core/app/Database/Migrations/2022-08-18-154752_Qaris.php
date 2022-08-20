@@ -20,7 +20,7 @@ class Qaris extends Migration
             ]
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->createTable('qaris');
+        $this->forge->createTable('qari');
     }
 
     public function down()
